@@ -39,7 +39,7 @@
 				</div>
 				<div class="p-3">
 					<div class="float-left">
-						<p class="">Forgot your password? <a href="checkout.php?forgot_pass">Click here</a></p>
+						<p class="">Forgot your password? <a href="forgot_password.php">Click here</a></p>
 					</div>
 					<div class="float-right">
 						<p class="">Don't have an account? <a href="register.php">Register now</a></p>
@@ -49,6 +49,9 @@
 			<div class="card-footer">
 				<div class="float-right">
 					<button type="submit" name="login" class="btn btn-black" style="border-radius: 10em;background: #1c2a48">Login</button>
+				</div>
+				<div class="float-left">
+					<button name="back" class="btn btn-black" style="border-radius: 10em;background: #1c2a48" onclick="goBack()">Back</button>
 				</div>
 			</div>
 		</form>
@@ -85,7 +88,11 @@
 		?>
 	</div>
 </div>
-
+<script>
+        function goBack() {
+            window.location.href = 'http://localhost/internship/index.php';
+        }
+    </script>
 <?php
 	include 'includes/footer.php';
 ?>

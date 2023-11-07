@@ -31,6 +31,9 @@
 				<div class="float-right">
 					<button type="submit" name="login" class="btn btn-black" style="border-radius: 10em;background: #1c2a48">Login</button>
 				</div>
+				<div class="float-left">
+					<button name="back" class="btn btn-black" style="border-radius: 10em;background: #1c2a48" onclick="goBack()">Back</button>
+				</div>
 			</div>
 		</form>
 		<?php 
@@ -59,7 +62,11 @@
 		?>
 	</div>
 </div>
-
+<script>
+        function goBack() {
+            window.location.href = 'http://localhost/internship/index.php';
+        }
+</script>
 <?php
 	include 'includes/footer.php';
 ?>
